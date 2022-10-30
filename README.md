@@ -12,3 +12,10 @@ As a Data Engineer, I have to create high-quality data pipelines that are dynami
 The source data resides in Azure Data Lake and needs to be processed in a NYC data warehouse in Azure Synapse Analytics. The source datasets consist of CSV files with Employee master data and monthly payroll data entered by various City agencies.
 
 ![image](https://user-images.githubusercontent.com/61830624/198897732-c3f75ee7-9e99-4faf-b096-2a9134cdb7ff.png)
+
+
+### For this project, you'll do your work in the Azure Portal, using several Azure resources including:
+  - Azure Data Lake Gen2
+  - Azure SQL DB
+  - Azure Data Factory
+  - Azure Synapse Analytics
