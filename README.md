@@ -70,23 +70,51 @@ The table are successfully created in the SQL Database
 In Azure Data Factory, create a linked service to the data lake that contains the data files
   - From the data stores, select Azure Data Lake Gen 2
   - Test the connection
-  ![image](https://user-images.githubusercontent.com/61830624/198903546-724c197a-02d2-4b23-a8a6-45dcac194fd1.png)
+![image](https://user-images.githubusercontent.com/61830624/198904731-9f6bd086-9ff9-4c8c-97e1-9930f17a85c5.png)
 
 ### 2.Create a Linked Service to SQL Database that has the current (2021) data
 If you get a connection error, remember to add the IP address to the firewall settings in SQL DB in the Azure Portal
-![image](https://user-images.githubusercontent.com/61830624/198903837-0bf8c300-efd2-47d9-ae4a-c27dcd6c27ed.png)
-
-![image](https://user-images.githubusercontent.com/61830624/198903802-de240c83-75c9-458f-96eb-6c51e1e83c2e.png)
+![image](https://user-images.githubusercontent.com/61830624/198904792-ec4b97d3-3b3e-48f5-affd-d7e680457e2f.png)
 
 
 ### 3. Create a Linked Service for Synapse Analytics
   - Create the linked service to the SQL pool.
-![image](https://user-images.githubusercontent.com/61830624/198903956-502f5ec2-b0ab-436f-baae-1468380c923d.png)
+![image](https://user-images.githubusercontent.com/61830624/198904879-03b6b449-3b73-42b5-a737-b4259946002b.png)
 
+All the 3 linked services successfully created:
+![image](https://user-images.githubusercontent.com/61830624/198904895-2d2cf65c-020b-4942-924a-36086f7f35c5.png)
 
-All the 3 link services successfully created:
-![image](https://user-images.githubusercontent.com/61830624/198904021-cfa383e8-e8c2-4739-956f-081d1f13d4b4.png)
+# Step 3: Create Datasets in Azure Data Factory
+### 1.Create the datasets for the 2021 Payroll file on Azure Data Lake Gen2
+  - Select DelimitedText
+  - Set the path to the nycpayroll_2021.csv in the Data Lake
+  - Preview the data to make sure it is correctly parsed
+![image](https://user-images.githubusercontent.com/61830624/198905426-52749c78-c4d3-4704-8669-47cec2408e7b.png)
 
+![image](https://user-images.githubusercontent.com/61830624/198905392-da6ddb68-1deb-4d04-96b1-d0f0ca0b65c2.png)
+
+### 2. Repeat the same process to create datasets for the rest of the data files in the Data Lake
+  - EmpMaster.csv
+  - TitleMaster.csv
+  - AgencyMaster.csv
+  - Remember to publish all the datasets
+![image](https://user-images.githubusercontent.com/61830624/198905378-eefe9482-f5cb-484b-8d32-f388f8ae33a9.png)
+
+### 3. Create the dataset for transaction data table that should contain current (2021) data in SQL DB
+![image](https://user-images.githubusercontent.com/61830624/198905778-5ecca5d3-43e4-4684-a7b3-9eadbd0e3285.png)
+
+### 4. Create the datasets for destination (target) tables in Synapse Analytics
+  - dataset for NYC_Payroll_EMP_MD
+   ![image](https://user-images.githubusercontent.com/61830624/198905948-940f781b-d82e-4cb7-af85-7d4d83acf1b5.png)
+
+  - for NYC_Payroll_TITLE_MD
+    ![image](https://user-images.githubusercontent.com/61830624/198906015-ddf13554-b934-447d-be7a-61c206590d62.png)
+
+  - for NYC_Payroll_AGENCY_MD
+    ![image](https://user-images.githubusercontent.com/61830624/198906059-81387635-34ba-498c-994e-1fb22a3140bb.png)
+
+  - for NYC_Payroll_Data
+    ![image](https://user-images.githubusercontent.com/61830624/198906088-fed9842e-867c-46c5-bf24-b2899a83fa1d.png)
 
 
 
