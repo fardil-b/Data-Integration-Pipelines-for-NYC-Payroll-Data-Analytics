@@ -57,8 +57,36 @@ Create a SQL dedicated pool in the Synapse Analytics workspace
 In the SQL dedicated pool, Create master data tables and payroll transaction tables:
 ![image](https://user-images.githubusercontent.com/61830624/198903195-98f7b2ba-cbef-4278-9243-8f81d3ca189c.png)
 
+
 The table are successfully created in the SQL Database
+
 ![image](https://user-images.githubusercontent.com/61830624/198903272-07ca7114-ca11-4edd-8b4a-784c7feee37b.png)
+
+
+# Step 2: Create Linked Services
+
+### 1.Create a Linked Service for Azure Data Lake
+
+In Azure Data Factory, create a linked service to the data lake that contains the data files
+  - From the data stores, select Azure Data Lake Gen 2
+  - Test the connection
+  ![image](https://user-images.githubusercontent.com/61830624/198903546-724c197a-02d2-4b23-a8a6-45dcac194fd1.png)
+
+### 2.Create a Linked Service to SQL Database that has the current (2021) data
+If you get a connection error, remember to add the IP address to the firewall settings in SQL DB in the Azure Portal
+![image](https://user-images.githubusercontent.com/61830624/198903837-0bf8c300-efd2-47d9-ae4a-c27dcd6c27ed.png)
+
+![image](https://user-images.githubusercontent.com/61830624/198903802-de240c83-75c9-458f-96eb-6c51e1e83c2e.png)
+
+
+### 3. Create a Linked Service for Synapse Analytics
+  - Create the linked service to the SQL pool.
+![image](https://user-images.githubusercontent.com/61830624/198903956-502f5ec2-b0ab-436f-baae-1468380c923d.png)
+
+
+All the 3 link services successfully created:
+![image](https://user-images.githubusercontent.com/61830624/198904021-cfa383e8-e8c2-4739-956f-081d1f13d4b4.png)
+
 
 
 
