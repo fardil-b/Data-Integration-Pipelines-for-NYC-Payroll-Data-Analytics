@@ -119,6 +119,32 @@ All the 3 linked services successfully created:
 
 # Step 4: Create Data Flows
 
+### 1 .In Azure Data Factory, create the data flow to load 2021 Payroll Data to SQL DB transaction table (in the future NYC will load all the transaction data into this table).
+  - Create a new data flow
+  - Select the dataset for the 2021 payroll file as the source
+    ![image](https://user-images.githubusercontent.com/61830624/198999545-ff9a20ba-0b23-422f-8188-7152c02c516f.png)
+    
+    ![image](https://user-images.githubusercontent.com/61830624/198998800-6037d9ef-ee12-483c-8975-4fc5bb101334.png)
+  
+  - Select the sink dataset as the payroll table on SQL DB
+    ![image](https://user-images.githubusercontent.com/61830624/198999423-a81a99ea-b09e-45a6-bae7-242ee2f6abf3.png)
 
+  - Make sure to reassign any missing source to target mappings
+    ![image](https://user-images.githubusercontent.com/61830624/198998870-4849c7a9-a4c3-48a3-bdfd-2aa73155a018.png)
 
+### 2.Create Pipeline to load 2021 Payroll data into transaction table in the SQL DB
+  - Create a new pipeline
+  - Select the data flow to load the 2021 file into SQLDB
+    ![image](https://user-images.githubusercontent.com/61830624/199007103-a695671e-9789-4d58-8a94-64123c9a9fb6.png)
+
+  - Trigger the pipeline
+     ![image](https://user-images.githubusercontent.com/61830624/199007394-42da9439-b454-4a71-93cd-868bff46157d.png)
+
+  - Monitor the pipeline
+     ![image](https://user-images.githubusercontent.com/61830624/199008169-376a7057-e07b-435c-9ce3-72ab64104e52.png)
+
+  - Take a screenshot of the Azure Data Factory screen pipeline run after it has finished.
+    ![image](https://user-images.githubusercontent.com/61830624/199008048-58a6aee3-e716-4a38-a554-2abe955cb697.png)
+
+  - Make sure the data is successfully loaded into the SQL DB table
 
