@@ -197,9 +197,13 @@ All the 3 linked services successfully created:
   ![image](https://user-images.githubusercontent.com/61830624/199103269-909ec1ec-cb9e-4db5-a3c3-c5c2c28057c6.png)
   
   
-  #### All pipelines were run successfully
-  ![image](https://user-images.githubusercontent.com/61830624/199103326-c914d92f-6084-490d-aecc-23e693a6a8ad.png)
+  
+  #### Load all to synapse
+  ![image](https://user-images.githubusercontent.com/61830624/199108722-9b0869e3-fc81-437d-955d-fed77ae22475.png)
 
+  
+  #### All pipelines were run successfully
+  ![image](https://user-images.githubusercontent.com/61830624/199110393-9b099a48-3d3d-4a5e-8ab7-5400623d5bc9.png)
 
 
   
