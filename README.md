@@ -160,4 +160,16 @@ All the 3 linked services successfully created:
     ![image](https://user-images.githubusercontent.com/61830624/199026835-8c649e9d-7664-4a42-b80b-15ec31c9a900.png)
 
 
+### 4. Create a data flow to load 2021 data from SQL DB to Synapse Analytics
+  ![image](https://user-images.githubusercontent.com/61830624/199030071-0aab628c-f232-477e-a4b6-7cded66b8d41.png)
+  
+  ![image](https://user-images.githubusercontent.com/61830624/199030338-d3bfe62e-18b1-48d9-8e5a-eaf2b8f79e04.png)
+
+### 5. Create pipelines for Employee, Title, Agency, and year 2021 Payroll transaction data to Synapse Analytics containing the data flows.
+  - Select the dirstaging folder in the data lake storage for staging
+  - Optionally you can also create one master pipeline to invoke all the Data Flows
+  - Validate and publish the pipelines
+
+
+
 
