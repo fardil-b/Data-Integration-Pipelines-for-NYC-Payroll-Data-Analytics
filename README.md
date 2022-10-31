@@ -169,6 +169,44 @@ All the 3 linked services successfully created:
   - Select the dirstaging folder in the data lake storage for staging
   - Optionally you can also create one master pipeline to invoke all the Data Flows
   - Validate and publish the pipelines
+    
+    #### Employee
+    ![image](https://user-images.githubusercontent.com/61830624/199100211-706da303-55d2-47df-9ff7-666b1d58f873.png)
+   
+   ![image](https://user-images.githubusercontent.com/61830624/199100287-1da2465c-5dae-4215-b1ff-83670fd6132a.png)
+   
+   #### Title
+   ![image](https://user-images.githubusercontent.com/61830624/199100963-b1bc8707-793c-4721-bdea-269444e59217.png)
+   
+   ![image](https://user-images.githubusercontent.com/61830624/199101669-58ffb5b2-e735-4fa0-b657-c100533f197e.png)
+   
+   #### Year 2021
+   ![image](https://user-images.githubusercontent.com/61830624/199102432-b79362b5-33e1-4a7e-8c87-3f131895be57.png)
+
+
+
+  #### Agency
+  ![image](https://user-images.githubusercontent.com/61830624/199101814-cd9d94b7-622b-42ae-9246-8d069ca717f8.png)
+  
+  ![image](https://user-images.githubusercontent.com/61830624/199103091-91e8766e-9d82-4826-8667-d228b23dc963.png)
+
+
+  #### Year 2021
+  ![image](https://user-images.githubusercontent.com/61830624/199103573-f45109f6-1a2f-44dc-ad08-4cd77ba49840.png)
+  
+  ![image](https://user-images.githubusercontent.com/61830624/199103269-909ec1ec-cb9e-4db5-a3c3-c5c2c28057c6.png)
+  
+  
+  #### All pipelines were run successfully
+  ![image](https://user-images.githubusercontent.com/61830624/199103326-c914d92f-6084-490d-aecc-23e693a6a8ad.png)
+
+
+
+  
+
+   
+   
+
 
 
 
