@@ -147,4 +147,17 @@ All the 3 linked services successfully created:
     ![image](https://user-images.githubusercontent.com/61830624/199008048-58a6aee3-e716-4a38-a554-2abe955cb697.png)
 
   - Make sure the data is successfully loaded into the SQL DB table
+    ![image](https://user-images.githubusercontent.com/61830624/199016746-12fa8152-2e57-43f3-bb38-bf989d8691ba.png)
+
+### 3. Create data flows to load the data from the data lake files into the Synapse Analytics data tables
+  - Create the data flows for loading Employee, Title, and Agency files into corresponding SQL pool tables on Synapse Analytics
+  - For each Employee, Title, and Agency file data flow, sink the data into each target Synaspe table
+  - 
+    ![image](https://user-images.githubusercontent.com/61830624/199025374-2b50adbc-8546-4309-a2af-8e27c43ff1e5.png)
+    
+    ![image](https://user-images.githubusercontent.com/61830624/199026325-efa28c5b-daad-4d34-8941-95bebe6df5f7.png)
+
+    ![image](https://user-images.githubusercontent.com/61830624/199026835-8c649e9d-7664-4a42-b80b-15ec31c9a900.png)
+
+
 
