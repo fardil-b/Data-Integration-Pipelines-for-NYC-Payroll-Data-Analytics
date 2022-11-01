@@ -222,6 +222,9 @@ In this step, we'll extract the 2021 year data and historical data, merge, aggre
   - Create a data flow level parameter for Fiscal Year
   - Add first Source for table_sqldb_nyc_payroll_data table
   - Add second Source for the Azure Data Lake history folder
+    
+### 4.Create a new Union activity in the data flow and Union with history files
+    ![image](https://user-images.githubusercontent.com/61830624/199210311-893b95af-3382-429b-b44f-ea565676f25d.png)
 
 
 
